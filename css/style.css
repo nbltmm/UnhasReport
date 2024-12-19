@@ -1,0 +1,119 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('../assets/background11.jpg') no-repeat center center fixed; /* Gambar latar */
+    background-size: cover; /* Pastikan gambar memenuhi layar */
+    color: #ffffff; /* Warna teks default */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgba(128, 0, 0, 0.8);
+}
+
+.navbar-brand, .nav-link {
+    color: #800000 !important;
+}
+
+.nav-link:hover {
+    color: #f8d7da !important; /* Warna merah muda */
+}
+
+/* Hero Section */
+.hero {
+    background: url('../assets/data1.png') no-repeat center center;
+    background-size: cover;
+    color: #ffffff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+.hero .btn {
+    background-color: #800000;
+    border-color: #800000;
+    color: #ffffff;
+}
+
+.hero .btn:hover {
+    background-color: #660000;
+    border-color: #660000;
+}
+
+/* Section Informasi */
+section#info {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    color: #800000;
+    padding: 2rem;
+}
+
+.card {
+    border: none;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    color: #000000;
+}
+
+/* Formulir Laporan */
+section#laporan {
+    background: url('../assets/background11.jpg') no-repeat center center fixed; /* Gambar latar */
+    background-size: cover; /* Pastikan gambar memenuhi layar */
+    border-radius: 10px;
+    padding: 2rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+textarea, input {
+    border-color: #800000;
+}
+
+textarea:focus, input:focus {
+    border-color: #660000;
+    box-shadow: 0 0 5px rgba(102, 0, 0, 0.5);
+}
+
+.btn-primary {
+    background-color: #800000;
+    border-color: #800000;
+}
+
+.btn-primary:hover {
+    background-color: #660000;
+    border-color: #660000;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(128, 0, 0, 0.8);
+    color: #ffffff;
+}
+
+footer a {
+    color: #f8d7da;
+}
+
+footer a:hover {
+    color: #ffffff;
+}

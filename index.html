@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UnhasReport</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">UnhasReport</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#info">Informasi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#laporan">Laporkan</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero text-white text-center py-5" style="background-image: url('assets/hero.jpg');">
+        <div class="container">
+            <h1 class="display-4 fw-bold">STOP SEXUAL VIOLENCE!</h1>
+            <p class="lead">Jangan Takut Bersuara, Anda Tidak Sendiri.</p>
+            <a href="#laporan" class="btn btn-primary btn-lg mt-3">Laporkan Sekarang</a>
+        </div>
+    </div>
+
+    <!-- Informasi -->
+    <section id="info" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-4">Informasi Kekerasan Seksual</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <img src="assets/icon1.png" class="card-img-top" alt="Icon">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Unhas Proses 18 Kasus Kekerasan Seksual</h5>
+                            <p class="card-text">Terdiri dari 10 mahasiswa Unhas, lima tenaga pendidik, satu warga kampus, dan dua lainnya adalah bukan warga kampus.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <img src="assets/icon2.png" class="card-img-top" alt="Icon">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Penanganan Korban Kasus kekerasan Seksual</h5>
+                            <p class="card-text">Satuan Tugas Pencegahan dan Penanganan Kekerasan Seksual (PPKS) bekerja sama dengan Pusat Layanan Psikologi Unhas untuk memberikan dukungan dan pemulihan terhadap para korban.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <img src="assets/icon3.png" class="card-img-top" alt="Icon">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Lindungi Korban</h5>
+                            <p class="card-text">Pastikan korban mendapatkan dukungan dan keadilan yang layak dengan pemberian sanksi kepada pelaku kekerasan seksual dengan pemberhentian tetap dari jabatan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulir Laporan -->
+    <section id="laporan" class="py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-4">Laporkan Kekerasan Seksual</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <form action="report.php" method="POST" class="needs-validation" novalidate>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Nama</label>
+                                    <input type="text" id="name" name="name" class="form-control" required>
+                                    <div class="invalid-feedback">Nama harus diisi.</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" id="email" name="email" class="form-control" required>
+                                    <div class="invalid-feedback">Masukkan email yang valid.</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="description" class="form-label">Deskripsi Kejadian</label>
+                                    <textarea id="description" name="description" rows="5" class="form-control" required></textarea>
+                                    <div class="invalid-feedback">Deskripsi harus diisi.</div>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Laporkan</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2024 UnhasReport | Dibuat untuk mendukung keadilan.</p>
+        <p><a href="#" class="text-white text-decoration-none">Jl. Perintis Kemerdekaan Km.10 Tamalanrea, Makassar Sulawesi Selatan Indonesia</a></p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
